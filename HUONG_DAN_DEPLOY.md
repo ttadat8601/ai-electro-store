@@ -35,29 +35,26 @@ Vercel là nền tảng số 1 hiện nay cho các dự án React / Vite:
    git remote add origin https://github.com/TÊN_GITHUB_CỦA_BẠN/ai-electro-store.git
    git push -u origin main
    ```
-3. Truy cập **[https://vercel.com](https://vercel.com)**, đăng nhập bằng GitHub.
-4. Chọn **Add New...** -> **Project** -> Bấm **Import** repository vừa đẩy lên.
-5. Giữ nguyên mặc định (Vercel tự động nhận diện Vite và `vercel.json`), bấm **Deploy**.
-6. Sau khoảng 30 giây, bạn sẽ nhận được link chính thức dạng: `https://ai-electro-store.vercel.app`.
-
-### Nếu muốn deploy trực tiếp bằng dòng lệnh:
-Chạy lệnh sau trong thư mục dự án:
-```bash
-npx vercel
-```
-Làm theo hướng dẫn trên màn hình (đăng nhập và nhấn Enter xác nhận), Vercel sẽ tự động tải lên và trả về link web ngay.
+### Các bước Deploy trên Vercel:
+1. Truy cập **[https://vercel.com](https://vercel.com)**, đăng nhập bằng tài khoản GitHub của bạn (`ttadat8601`).
+2. Chọn **Add New...** -> **Project** -> Tìm repository **`ai-electro-store`** và bấm **Import**.
+3. Giữ nguyên mặc định (Vercel tự động nhận diện cấu hình Vite và file `vercel.json`), bấm nút **Deploy**.
+4. Sau khoảng 20-30 giây, Vercel sẽ cấp cho bạn một link chính thức hoạt động vĩnh viễn (ví dụ: `https://ai-electro-store-xxx.vercel.app`).
 
 ---
 
-## 🌐 CÁCH 3: GitHub Pages (Nếu giáo viên yêu cầu nộp link GitHub Pages)
+## 🌐 CÁCH 3: GitHub Pages (Tự động chạy qua GitHub Actions)
 
-Dự án đã được cấu hình sẵn file tự động hóa `.github/workflows/deploy.yml`:
+Toàn bộ mã nguồn đã được đẩy lên GitHub tại:
+👉 **[https://github.com/ttadat8601/ai-electro-store](https://github.com/ttadat8601/ai-electro-store)**
 
-1. Đẩy mã nguồn lên GitHub như ở Cách 2.
-2. Trên trang repository GitHub của bạn, vào tab **Settings** -> mục **Pages** (ở cột bên trái).
-3. Tại phần **Build and deployment** -> **Source**: Chọn **GitHub Actions**.
-4. GitHub sẽ tự động chạy quy trình build và triển khai trang web tại:
-   `https://TÊN_GITHUB_CỦA_BẠN.github.io/ai-electro-store/`
+Để kích hoạt link web chạy trên GitHub:
+1. Truy cập vào trang cài đặt Pages của repository:
+   👉 **[https://github.com/ttadat8601/ai-electro-store/settings/pages](https://github.com/ttadat8601/ai-electro-store/settings/pages)**
+2. Tại phần **Build and deployment** -> mục **Source**:
+   Chuyển từ *"Deploy from a branch"* thành **`GitHub Actions`**.
+3. Đợi khoảng 1-2 phút, GitHub sẽ tự động build và cấp link chính thức:
+   👉 **`https://ttadat8601.github.io/ai-electro-store/`**
 
 ---
 
